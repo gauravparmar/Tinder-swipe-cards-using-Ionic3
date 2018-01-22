@@ -12,7 +12,8 @@ import { ChatsPage } from '../pages/chats/chats';
 
 //For swipe cards
 import { HttpModule } from '@angular/http';
-import { SwingModule } from 'angular2-swing';
+import { SwipeCardsModule } from 'ng2-swipe-cards';
+// import 'hammerjs';
 ///For swipe cards
 
 
@@ -28,7 +29,7 @@ import { SwingModule } from 'angular2-swing';
     BrowserModule,
     //For swipe cards
     HttpModule,
-    SwingModule,
+    SwipeCardsModule,
     ///For swipe cards
     IonicModule.forRoot(MyApp,{tabsPlacement:"top"}),
     // IonicModule.forRoot(MyApp),

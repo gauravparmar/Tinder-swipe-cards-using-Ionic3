@@ -25722,83 +25722,231 @@ ion-icon.tab-button-icon.icon.icon-md {
   background-color: #dae4f6;
 }
 
-page-home #card-stack {
-  width: 100%;
-  height: 58rem;
-  margin: 0px auto 0;
-  position: relative;
+page-home {
+  /* Reset `button` and button-style `input` default styles */
+  /* Make `a` like a button */
+  /* Demo */
 }
 
-page-home ion-card.card.card-md {
-  background: white;
+page-home [role="button"],
+page-home input[type="submit"],
+page-home input[type="reset"],
+page-home input[type="button"],
+page-home button {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
 }
 
-page-home #card-stack ion-card {
-  border-radius: 5px;
-  position: absolute;
+page-home input[type="submit"],
+page-home input[type="reset"],
+page-home input[type="button"],
+page-home button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-appearance: button;
+  /* for input */
+  -webkit-user-select: none;
+  /* for button */
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+page-home input::-moz-focus-inner,
+page-home button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+page-home [role="button"] {
+  color: inherit;
+  cursor: default;
+  display: inline-block;
   text-align: center;
-  top: 3%;
-  height: 90%;
+  text-decoration: none;
+  white-space: pre;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
 }
 
-page-home .likeicon {
-  font-size: 6rem;
+page-home [role="button"],
+page-home input[type="submit"],
+page-home input[type="reset"],
+page-home input[type="button"],
+page-home button {
+  background-color: #f0f0f0;
+  border: 1px solid black;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.25em;
+  height: 2.5em;
+  line-height: 2.5;
+  margin: 0.25em;
+  padding: 0 1em;
+  width: 14em;
 }
 
-page-home .dislikeicon {
-  font-size: 7rem;
+page-home html, page-home body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
 }
 
-page-home .dislikeicon {
-  color: gray;
+page-home .footer {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
 }
 
-page-home .card_user_info {
-  text-align: left;
-  padding-left: 1rem;
+page-home .left-panel {
+  float: left;
+  height: 100%;
+  width: 100%;
+  max-width: 400px;
 }
 
-page-home .card_user_name {
-  font-size: 2.2rem;
+page-home .right-panel {
+  float: left;
+  height: 100%;
+  width: 400px;
+  overflow: auto;
+}
+
+page-home .card-container {
+  margin: auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 80%;
+  width: 80%;
+  margin: 10px auto;
+}
+
+page-home sc-card {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  max-height: 400px;
+  max-width: 400px;
+}
+
+page-home .card-header span {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 30px;
+  height: 30px;
   text-align: center;
   font-weight: bold;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #E1E1E1;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
-page-home .card_user_city {
-  font-size: 1.7rem;
-  text-align: center;
+page-home .card-content {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
 }
 
-page-home button.disable-hover.button.button-md.button-clear.button-clear-md.button-small.button-small-md.button-clear-md-primary {
-  height: auto;
-  padding: 0.5rem;
+page-home .card-content img {
+  max-width: 90%;
+  max-height: 90%;
 }
 
-page-home .button-clear-ios-primary {
-  border-color: transparent;
-  background-color: transparent;
-  height: 8rem;
+page-home .buttons {
+  width: 100%;
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
 }
 
-page-home ion-col.responseIcon.col {
-  text-align: center;
-  bottom: 7em;
+page-home .buttons button {
+  background-color: #E1E1E1;
+  max-width: 160px;
+  width: 50%;
 }
 
-page-home ion-icon.dislikeicon.icon.icon-md.ion-md-close-circle {
-  background-color: white;
-  padding: 5.7px 0px;
-  border-radius: 0.6em;
-  border: 0.6rem solid #2f72f0;
-  /* padding: 0.0em; */
-  /* margin: 0px; */
+page-home .log-container {
+  margin: auto;
+  width: 96%;
+  height: 15%;
+  border: 1px solid black;
+  overflow-y: scroll;
 }
 
-page-home ion-icon.likeicon.icon.icon-md.ion-md-heart {
-  background-color: white;
-  padding: 11px 4px 5px 4px;
-  border-radius: 0.8em;
-  border: 0.6rem solid #2f72f0;
-  /* padding: 0.0em; */
-  /* margin: 0px; */
+page-home .log-container span {
+  display: block;
+  width: 100%;
 }
