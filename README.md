@@ -1,7 +1,7 @@
-Ginder
-===================
+Tinder Swipe Cards Using Ionic3
+================================
 
-Swipeable card based layout for Ionic and Angular as in Tinder App.
+Minimalistic Ionic3 and Angular App with swipeable cards as in Tinder App with event logs and throw direction customization. 
 
 ### Author Information ###
 
